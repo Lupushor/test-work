@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Test</title>
   </head>
@@ -19,7 +23,7 @@
     </header>
     <main>
       <section>
-        <h1>Заголовок</h1>
+        <h1 class="animate__animated animate__bounceInLeft">Заголовок</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
           dicta et optio facere ea, atque temporibus saepe commodi voluptatum
@@ -36,9 +40,39 @@
           nesciunt!
         </p>
       </section>
+      <section class="anim">
+        <div
+          class="box wow animate__animated animate__backInLeft"
+          data-wow-delay="1s"
+          data-wow-duration="8s"
+        >
+          <img src="./images/img/cat1.jpg" alt="" width="500" />
+        </div>
+
+        <div class="box wow animate__animated animate__backInRight">
+          <img src="./images/img/cat3.jpg" alt="" width="500" />
+        </div>
+
+        <div class="box wow animate__animated animate__backInLeft">
+          <img src="./images/img/cat1.jpg" alt="" width="500" />
+        </div>
+
+        <div class="wow animate__animated animate__rotateInUpRight">
+          <img src="./images/img/cat2.jpg" alt="" width="500" />
+        </div>
+
+        <div class="box wow animate__animated animate__backInRight">
+          <img src="./images/img/dog1.webp" alt="" width="500" />
+        </div>
+      </section>
     </main>
     <footer>
       <a href="#"> welcom! </a>
     </footer>
+
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
